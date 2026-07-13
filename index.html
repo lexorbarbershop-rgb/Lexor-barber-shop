@@ -1,170 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lexor Barber Shop</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#000;
-color:#fff;
-}
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75));
-}
-
-h1{
-font-size:60px;
-letter-spacing:5px;
-margin-bottom:20px;
-}
-
-h2{
-font-size:35px;
-margin-bottom:20px;
-}
-
-p{
-font-size:20px;
-color:#d6d6d6;
-margin-bottom:15px;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 40px;
-background:#fff;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:40px;
-transition:.3s;
-}
-
-.btn:hover{
-background:#bdbdbd;
-}
-
-section{
-padding:70px 20px;
-text-align:center;
-}
-
-.cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-margin-top:30px;
-}
-
-.card{
-background:#111;
-padding:25px;
-border-radius:15px;
-width:280px;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-footer{
-background:#111;
-padding:40px;
-text-align:center;
-}
-
-footer p{
-margin:8px;
-}
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lexor Barber Shop en San Miguel, Lima. Cortes clásicos, fades, asesoría de imagen, rizos permanentes, tintes y limpieza facial." />
+  <meta name="theme-color" content="#070707" />
+  <title>Lexor Barber Shop | San Miguel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold:#d7a739;--gold2:#f0ca70;--black:#070707;--panel:#111317;--soft:#a7abb3;--white:#f7f5ef;--green:#25d366}
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth} body{font-family:Montserrat,Arial,sans-serif;background:var(--black);color:var(--white);line-height:1.6;overflow-x:hidden}
+    a{text-decoration:none;color:inherit} img{max-width:100%;display:block}.container{width:min(1160px,92%);margin:auto}.gold{color:var(--gold)}
+    header{position:fixed;inset:0 0 auto 0;z-index:1000;background:rgba(6,6,7,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(215,167,57,.14)}
+    nav{height:80px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.brand img{width:58px;height:58px;object-fit:contain;border-radius:8px}.brand strong{font-size:18px;letter-spacing:2px}.navlinks{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.8px}.navlinks a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:10px;font-weight:800;transition:.25s;border:1px solid transparent}.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#111;box-shadow:0 10px 28px rgba(215,167,57,.22)}.btn-gold:hover{transform:translateY(-2px)}.btn-outline{border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.04)}.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+    .hero{min-height:100vh;display:grid;place-items:center;position:relative;padding:120px 0 70px;background:radial-gradient(circle at 80% 25%,rgba(215,167,57,.16),transparent 27%),linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.84)),url('assets/corte-7.jpeg') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--black))}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border:1px solid rgba(215,167,57,.45);border-radius:999px;color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;background:rgba(0,0,0,.35)}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,88px);line-height:.98;margin:24px 0 22px;max-width:760px}.hero p{max-width:650px;color:#d0d2d7;font-size:18px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.hero-card{background:linear-gradient(145deg,rgba(17,19,23,.92),rgba(8,8,9,.96));border:1px solid rgba(215,167,57,.22);padding:24px;border-radius:22px;box-shadow:0 25px 70px rgba(0,0,0,.5)}.hero-card img{border-radius:16px;height:400px;width:100%;object-fit:cover}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.stat{background:#0c0d10;border:1px solid rgba(255,255,255,.07);padding:15px 8px;text-align:center;border-radius:12px}.stat b{display:block;color:var(--gold);font-size:22px}.stat span{font-size:11px;color:var(--soft);text-transform:uppercase;letter-spacing:1px}
+    section{padding:100px 0}.section-title{text-align:center;margin-bottom:48px}.section-title span{font-size:12px;color:var(--gold);text-transform:uppercase;font-weight:800;letter-spacing:2px}.section-title h2{font-family:'Playfair Display',serif;font-size:clamp(35px,5vw,54px);margin-top:10px}.section-title p{color:var(--soft);max-width:680px;margin:12px auto 0}
+    .services{background:#0b0c0e}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service-card{position:relative;background:linear-gradient(145deg,#15171b,#0d0e10);border:1px solid rgba(255,255,255,.08);padding:30px;border-radius:18px;transition:.25s;overflow:hidden}.service-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}.service-card:hover{transform:translateY(-6px);border-color:rgba(215,167,57,.42)}.service-card.featured{border-color:rgba(215,167,57,.48);box-shadow:0 18px 50px rgba(215,167,57,.1)}.badge{position:absolute;right:18px;top:18px;background:var(--gold);color:#111;font-size:10px;font-weight:900;padding:6px 9px;border-radius:999px}.service-card h3{font-size:23px;margin-bottom:6px}.price{font-size:36px;color:var(--gold);font-weight:800;margin:12px 0}.service-card ul{list-style:none;color:#c7c9ce;font-size:14px}.service-card li{padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06)}.service-card li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:9px}.service-card .btn{margin-top:22px;width:100%}
+    .extras{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.extras .price{font-size:20px}.extras-list{display:grid;gap:12px}.extra-item{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}.extra-item b{color:var(--gold2)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery-grid figure{height:280px;border-radius:15px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.08)}.gallery-grid img{height:100%;width:100%;object-fit:cover;transition:.5s}.gallery-grid figure:hover img{transform:scale(1.07)}.gallery-grid figure:nth-child(1),.gallery-grid figure:nth-child(6){grid-column:span 2}.gallery-grid figcaption{position:absolute;inset:auto 0 0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.88));font-size:12px;font-weight:700;letter-spacing:.6px}
+    .visit{background:linear-gradient(135deg,#111318,#08090a)}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.info-card{border:1px solid rgba(215,167,57,.2);background:#0d0f12;padding:34px;border-radius:18px}.info-card h3{font-size:27px;margin-bottom:20px}.info-row{display:flex;gap:15px;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.07)}.icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:12px;background:rgba(215,167,57,.12);color:var(--gold);font-size:20px}.info-row p{color:#c4c7ce}.socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.socials a{padding:10px 13px;border:1px solid rgba(255,255,255,.12);border-radius:9px;font-size:12px;font-weight:700}.socials a:hover{border-color:var(--gold);color:var(--gold)}
+    .booking{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,rgba(215,167,57,.15),rgba(255,255,255,.03));padding:42px;border-radius:18px;border:1px solid rgba(215,167,57,.24)}.booking h3{font-family:'Playfair Display',serif;font-size:42px;line-height:1.1}.booking p{color:#cbcdd1;margin:18px 0 26px}.booking .btn{width:max-content}
+    footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.08);color:#8e929b;text-align:center;font-size:13px}.float-wa{position:fixed;right:20px;bottom:20px;z-index:1200;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:900;font-size:26px;box-shadow:0 15px 35px rgba(0,0,0,.4);animation:pulse 2s infinite}@keyframes pulse{50%{box-shadow:0 0 0 13px rgba(37,211,102,0)}}
+    .menu{display:none;background:none;border:0;color:white;font-size:26px}
+    @media(max-width:900px){.navlinks{display:none}.menu{display:block}.hero-grid,.visit-grid{grid-template-columns:1fr}.hero-card{max-width:560px}.service-grid{grid-template-columns:1fr 1fr}.extras{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid figure:nth-child(1),.gallery-grid figure:nth-child(6){grid-column:span 1}}
+    @media(max-width:600px){nav{height:70px}.brand strong{font-size:14px}.brand img{width:46px;height:46px}.hero{padding-top:100px}.hero-grid{gap:28px}.hero-card img{height:300px}.service-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid figure{height:210px}.hero-actions .btn{width:100%}.booking{padding:30px}.booking h3{font-size:34px}.mini-stats{gap:7px}.stat b{font-size:18px}.stat span{font-size:9px}}
+  </style>
 </head>
-
 <body>
-
-<header>
-
-<h1>LEXOR BARBER SHOP</h1>
-
-<p>Donde el estilo se convierte en una experiencia.</p>
-
-<a class="btn" href="https://wa.me/51933761600">
-Reservar por WhatsApp
-</a>
-
-</header>
-
-<section>
-
-<h2>Nuestros Servicios</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>✂ Corte Premium</h3>
-<p>S/35</p>
-</div>
-
-<div class="card">
-<h3>🧔 Corte + Barba</h3>
-<p>S/60</p>
-</div>
-
-<div class="card">
-<h3>🎭 Mascarilla Facial</h3>
-<p>S/20</p>
-</div>
-
-<div class="card">
-<h3>🧴 Lavado Capilar</h3>
-<p>Incluido</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>¿Por qué elegir Lexor?</h2>
-
-<p>✔ Atención personalizada.</p>
-<p>✔ Estilo moderno y profesional.</p>
-<p>✔ Productos de alta calidad.</p>
-<p>✔ Ambiente cómodo y elegante.</p>
-
-</section>
-
-<footer>
-
-<h2>LEXOR BARBER SHOP</h2>
-
-<p>📍calle coronel jose inclan 242 San Miguel 15084 - Lima</p>
-
-<p>📞 WhatsApp: 933 761 600</p>
-
-<p>Instagram: @lexorbarbershop</p>
-
-</footer>
-
+<header><div class="container"><nav><a class="brand" href="#inicio"><img src="assets/logo.jpeg" alt="Logo Lexor Barber Shop"><strong>LEXOR <span class="gold">BARBER SHOP</span></strong></a><div class="navlinks"><a href="#servicios">Servicios</a><a href="#galeria">Galería</a><a href="#visitanos">Ubicación</a><a class="btn btn-gold" href="https://wa.me/51933761600?text=Hola%20Lexor%20Barber%20Shop,%20quiero%20reservar%20una%20cita" target="_blank">Reservar</a></div><button class="menu" aria-label="Menú">☰</button></nav></div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid"><div><span class="eyebrow">✦ La experiencia que mereces</span><h1>Tu mejor versión empieza en <span class="gold">Lexor</span></h1><p>Cortes de precisión, asesoría personalizada y una experiencia premium en el corazón de San Miguel, Lima.</p><div class="hero-actions"><a class="btn btn-gold" href="https://wa.me/51933761600?text=Hola%20Lexor%20Barber%20Shop,%20quiero%20reservar%20una%20cita" target="_blank">📅 Reservar una cita</a><a class="btn btn-outline" href="#servicios">Ver servicios</a></div></div><div class="hero-card"><img src="assets/corte-1.jpeg" alt="Corte premium Lexor Barber Shop"><div class="mini-stats"><div class="stat"><b>7/7</b><span>Atención</span></div><div class="stat"><b>10–9</b><span>Horario</span></div><div class="stat"><b>100%</b><span>Estilo</span></div></div></div></div></section>
+<section class="services" id="servicios"><div class="container"><div class="section-title"><span>Nuestros servicios</span><h2>Una experiencia para cada estilo</h2><p>Escoge el servicio que mejor se adapte a ti. Todos incluyen atención profesional y detalles pensados para que salgas renovado.</p></div><div class="service-grid">
+<article class="service-card"><h3>Servicio Básico</h3><div class="price">S/ 25</div><ul><li>Corte clásico</li><li>Lavado de cabello</li><li>Cejas</li><li>Mascarilla Black Mask</li><li>Bebida</li></ul><a class="btn btn-outline" href="https://wa.me/51933761600?text=Hola,%20quiero%20reservar%20el%20Servicio%20Básico" target="_blank">Reservar básico</a></article>
+<article class="service-card featured"><span class="badge">MÁS ELEGIDO</span><h3>Servicio Premium</h3><div class="price">S/ 35</div><ul><li>Cualquier fade</li><li>Diseño de cejas</li><li>Lavado de cabello</li><li>Mascarilla Golden</li><li>Bebida</li></ul><a class="btn btn-gold" href="https://wa.me/51933761600?text=Hola,%20quiero%20reservar%20el%20Servicio%20Premium" target="_blank">Reservar premium</a></article>
+<article class="service-card"><h3>Servicio Golden</h3><div class="price">S/ 45</div><ul><li>Corte con asesoría</li><li>Cambio de look</li><li>Lavado de cabello</li><li>Cejas</li><li>Mascarilla de colágeno</li><li>Bebida</li></ul><a class="btn btn-outline" href="https://wa.me/51933761600?text=Hola,%20quiero%20reservar%20el%20Servicio%20Golden" target="_blank">Reservar Golden</a></article>
+<article class="service-card extras"><div><h3>Servicios Extras</h3><p style="color:#b9bcc3;margin-top:10px">Transformaciones especiales realizadas con técnica, cuidado y asesoría profesional.</p><a class="btn btn-gold" href="https://wa.me/51933761600?text=Hola,%20quiero%20consultar%20por%20un%20servicio%20extra" target="_blank">Consultar disponibilidad</a></div><div class="extras-list"><div class="extra-item"><span>Ondas / rizos permanentes</span><b>Desde S/ 60</b></div><div class="extra-item"><span>Platinado global</span><b>S/ 350</b></div><div class="extra-item"><span>Mechas</span><b>S/ 200</b></div><div class="extra-item"><span>Limpieza facial</span><b>Desde S/ 45</b></div></div></article>
+</div></div></section>
+<section id="galeria"><div class="container"><div class="section-title"><span>Inspiración Lexor</span><h2>Estilos que hablan por ti</h2><p>Fade, cortes clásicos, texturas, rizos y acabados modernos para una imagen impecable.</p></div><div class="gallery-grid"><figure><img src="assets/corte-2.webp" alt="Fade moderno"><figcaption>Fade moderno</figcaption></figure><figure><img src="assets/corte-3.jpeg" alt="Corte clásico"><figcaption>Corte clásico</figcaption></figure><figure><img src="assets/corte-4.jpeg" alt="Estilo ejecutivo"><figcaption>Estilo ejecutivo</figcaption></figure><figure><img src="assets/corte-5.jpeg" alt="Look con barba"><figcaption>Look con barba</figcaption></figure><figure><img src="assets/corte-6.jpeg" alt="Fade premium"><figcaption>Fade premium</figcaption></figure><figure><img src="assets/corte-7.jpeg" alt="Degradado con barba"><figcaption>Degradado y perfilado</figcaption></figure><figure><img src="assets/corte-8.jpeg" alt="Side part"><figcaption>Side part</figcaption></figure><figure><img src="assets/corte-9.jpeg" alt="Rizos"><figcaption>Rizos y textura</figcaption></figure></div></div></section>
+<section class="visit" id="visitanos"><div class="container visit-grid"><div class="info-card"><h3>Visítanos en San Miguel</h3><div class="info-row"><div class="icon">📍</div><div><b>Dirección</b><p>Calle Coronel José Joaquín Inclán 242, San Miguel, Lima, Perú</p></div></div><div class="info-row"><div class="icon">🕙</div><div><b>Horario</b><p>Lunes a domingo, de 10:00 a. m. a 9:00 p. m.</p></div></div><div class="info-row"><div class="icon">📱</div><div><b>WhatsApp</b><p>933 761 600</p></div></div><div class="socials"><a href="https://instagram.com/lexor.barbershop" target="_blank">Instagram</a><a href="https://www.facebook.com/search/top?q=Lexor%20barber%20shop" target="_blank">Facebook</a><a href="https://www.tiktok.com/@lexorbarbershop" target="_blank">TikTok</a><a href="https://www.google.com/maps/search/?api=1&query=Calle+Coronel+Jose+Joaquin+Inclan+242+San+Miguel+Lima+Peru" target="_blank">Abrir mapa</a></div></div><div class="booking"><span class="eyebrow">Reserva fácil por WhatsApp</span><h3>Tu próxima gran cita te espera</h3><p>Escríbenos, selecciona tu servicio y coordina el horario que mejor te convenga.</p><a class="btn btn-gold" href="https://wa.me/51933761600?text=Hola%20Lexor%20Barber%20Shop,%20quiero%20reservar%20una%20cita" target="_blank">💬 Reservar ahora</a></div></div></section>
+</main>
+<footer><div class="container">© <span id="year"></span> Lexor Barber Shop · San Miguel, Lima · Todos los derechos reservados.</div></footer>
+<a class="float-wa" href="https://wa.me/51933761600?text=Hola%20Lexor%20Barber%20Shop,%20quiero%20información" target="_blank" aria-label="WhatsApp">✆</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
